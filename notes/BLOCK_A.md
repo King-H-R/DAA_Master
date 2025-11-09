@@ -133,7 +133,7 @@ int binarySearch(vector<int>& a,int x){
 }
 ```
 ###Pseudo code
-'''cpp
+```cpp
 function BINARY_SEARCH(A, N, X)
     low = 0             // Initialize the start of the search range
     high = N - 1        // Initialize the end of the search range
@@ -152,7 +152,7 @@ function BINARY_SEARCH(A, N, X)
 
     return -1           // Target not found
 end function
-'''
+```
 
 
 
