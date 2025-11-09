@@ -132,6 +132,29 @@ int binarySearch(vector<int>& a,int x){
   return -1;
 }
 ```
+###Pseudo code
+'''cpp
+function BINARY_SEARCH(A, N, X)
+    low = 0             // Initialize the start of the search range
+    high = N - 1        // Initialize the end of the search range
+
+    while low is less than or equal to high do
+        mid = floor((low + high) / 2) // Calculate the middle index
+
+        if A[mid] is equal to X then
+            return mid  // Target found
+        else if A[mid] is less than X then
+            low = mid + 1 // Discard the lower half
+        else // A[mid] is greater than X
+            high = mid - 1 // Discard the upper half
+        end if
+    end while
+
+    return -1           // Target not found
+end function
+'''
+
+
 
 **Time:** O(log n) **Space:** O(1)
 
