@@ -39,7 +39,7 @@ Counting/Radix | O(n + k) | O(n + k) | O(n + k) | O(k) | Yes/No | No
 - Counterexample quick-check: test small cases where greedy might fail (example: coin set {1,3,4} for 'greedy coin change').
 
 ## 8. Quick code & test commands
-- Compile C++: `g++ -std=gnu++17 file.cpp -O2 -o file`
+- Compile C++: `g++ -std=gnu++17 file.py -O2 -o file`
 - Run: `./file < input.txt`
 - Run all tests: `bash tests/run_all.sh`
 

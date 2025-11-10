@@ -17,7 +17,7 @@ Language: C++ / Python
 
 ## 01 Foundations & Binary Search
 - [ ] Asymptotics notes added to cheatsheet (time: 40m)
-- [ ] Binary search variants implemented: `sorting/binary_search.cpp`
+- [ ] Binary search variants implemented: `sorting/binary_search.py`
   - Tests: passed 10 random cases (stable) ✅
   - Complexity: O(log n)
   - Notes: Remember off-by-one with upper_bound
@@ -25,15 +25,15 @@ Language: C++ / Python
 ---
 
 ## 02 Sorting
-- [ ] Merge Sort (`sorting/merge.cpp`)
+- [ ] Merge Sort (`sorting/merge.py`)
   - Tests: random arrays up to n=1e5, inversion count verified vs brute O(n^2) for n<=100
   - Complexity: Θ(n log n), Space: O(n)
   - Takeaway: implement stable merge carefully (use temp vector)
-- [ ] Quick Sort (`sorting/quick.cpp`)
+- [ ] Quick Sort (`sorting/quick.py`)
   - Tests: randomized pivot avoids worst-case on sorted input
   - Complexity: avg Θ(n log n), worst Θ(n^2)
   - Bug noted: stack overflow on degenerate recursion -> fixed by tail recursion elimination/pivot randomization
-- [ ] Heap Sort (`sorting/heap.cpp`)
+- [ ] Heap Sort (`sorting/heap.py`)
   - Tests: ---
   - Notes: build-heap O(n)
 - [ ] Counting/Radix
@@ -42,17 +42,17 @@ Language: C++ / Python
 ---
 
 ## 03 Divide & Conquer
-- [ ] Inversion count (`dnq/inversions.cpp`)
+- [ ] Inversion count (`dnq/inversions.py`)
   - Tests: validated
-- [ ] Closest Pair (`dnq/closest_pair.cpp`)
+- [ ] Closest Pair (`dnq/closest_pair.py`)
   - Notes: implement divide step; tested sample only
 
 ---
 
 ## 04 Greedy & MST
-- [ ] Activity selection (`greedy/activity.cpp`)
-- [ ] Huffman (`greedy/huffman.cpp`)
-- [ ] Kruskal + DSU (`graphs/kruskal.cpp`)
+- [ ] Activity selection (`greedy/activity.py`)
+- [ ] Huffman (`greedy/huffman.py`)
+- [ ] Kruskal + DSU (`graphs/kruskal.py`)
   - Tests: small graph passed
 - [ ] Prim
 
@@ -60,32 +60,32 @@ Language: C++ / Python
 
 ## 05 Dynamic Programming
 - [ ] Fibonacci memo/tab
-- [ ] 0/1 Knapsack (`dp/knapsack.cpp`)
+- [ ] 0/1 Knapsack (`dp/knapsack.py`)
   - Tests: small W verified vs brute
-- [ ] LCS (`dp/lcs.cpp`) ✔
-- [ ] Edit Distance (`dp/edit_distance.cpp`) ✔
-- [ ] LIS O(n log n) (`dp/lis.cpp`) ✔
+- [ ] LCS (`dp/lcs.py`) ✔
+- [ ] Edit Distance (`dp/edit_distance.py`) ✔
+- [ ] LIS O(n log n) (`dp/lis.py`) ✔
 - [ ] Matrix Chain Multiplication
 
 ---
 
 ## 06 Graphs traversal & SSSP
-- [ ] BFS/DFS (`graphs/bfs_dfs.cpp`) ✔
-- [ ] Topological sort (`graphs/topo.cpp`) ✔
-- [ ] Dijkstra (`graphs/dijkstra.cpp`) — tested on grid, PQ version ✔
-- [ ] Bellman-Ford (`graphs/bellman_ford.cpp`) — negative cycle detection ✔
+- [ ] BFS/DFS (`graphs/bfs_dfs.py`) ✔
+- [ ] Topological sort (`graphs/topo.py`) ✔
+- [ ] Dijkstra (`graphs/dijkstra.py`) — tested on grid, PQ version ✔
+- [ ] Bellman-Ford (`graphs/bellman_ford.py`) — negative cycle detection ✔
 
 ---
 
 ## 07 Backtracking & Strings
-- [ ] N-Queens (`backtracking/nqueens.cpp`) ✔
-- [ ] KMP prefix function (`strings/kmp.cpp`) ✔
+- [ ] N-Queens (`backtracking/nqueens.py`) ✔
+- [ ] KMP prefix function (`strings/kmp.py`) ✔
 - [ ] Z-algorithm
 
 ---
 
 ## 08 Flow & Matching
-- [ ] Edmonds-Karp (`graphs/edmonds_karp.cpp`) - partial
+- [ ] Edmonds-Karp (`graphs/edmonds_karp.py`) - partial
 - [ ] Hopcroft-Karp
 
 ---

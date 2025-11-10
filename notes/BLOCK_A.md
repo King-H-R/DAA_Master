@@ -51,7 +51,7 @@ Rank these by growth (fastest → slowest):
 
 1. **Single loop**
 
-```cpp
+```py
 for(int i=0;i<n;i++) {...}
 ```
 
@@ -59,7 +59,7 @@ for(int i=0;i<n;i++) {...}
 
 2. **Nested loop**
 
-```cpp
+```py
 for(i=0;i<n;i++)
   for(j=0;j<n;j++)
 ```
@@ -68,7 +68,7 @@ for(i=0;i<n;i++)
 
 3. **Logarithmic**
 
-```cpp
+```py
 for(i=1;i<n;i*=2)
 ```
 
@@ -120,7 +120,7 @@ On a sorted array, repeatedly halve the search interval.
 
 ### Base Code
 
-```cpp
+```py
 int binarySearch(vector<int>& a,int x){
   int l=0,r=a.size()-1;
   while(l<=r){
@@ -133,7 +133,7 @@ int binarySearch(vector<int>& a,int x){
 }
 ```
 ### Pseudo code
-```cpp
+```py
 function BINARY_SEARCH(A, N, X)
     low = 0             // Initialize the start of the search range
     high = N - 1        // Initialize the end of the search range
@@ -236,7 +236,7 @@ Then note its complexity and why it still works for floats.
 
 ✅ **Deliverables after completing this workbook**
 
-1. `search/binary_search.cpp` + tested
+1. `search/binary_search.py` + tested
 2. `cheatsheet.md` updated with complexities & recurrences
 3. `progress.md` Block A marked ✅
 4. Ready to enter **Block B – Sorting & Selection**

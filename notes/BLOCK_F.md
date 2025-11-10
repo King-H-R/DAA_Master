@@ -28,7 +28,7 @@ Think of ripples spreading out from a source node — BFS explores **level by le
 
 ### Algorithm (Queue based)
 
-```cpp
+```py
 void bfs(int start, vector<vector<int>>& adj, int V){
     vector<bool> vis(V,false);
     queue<int> q;
@@ -70,7 +70,7 @@ Go as **deep** as possible along each branch before backtracking — like explor
 
 ### Recursive Version
 
-```cpp
+```py
 void dfsUtil(int u, vector<vector<int>>& adj, vector<bool>& vis){
     vis[u]=true;
     cout<<u<<" ";
@@ -116,7 +116,7 @@ A **topological order** of a DAG (Directed Acyclic Graph) is a linear ordering o
 
 Push vertex to stack after visiting all neighbors → reverse stack for order.
 
-```cpp
+```py
 void topoDFS(int u, vector<vector<int>>& adj, vector<bool>& vis, stack<int>& st){
     vis[u]=true;
     for(int v:adj[u])
@@ -152,7 +152,7 @@ Requires a **priority queue (min-heap)** for efficiency.
 
 ### Code (Simplified)
 
-```cpp
+```py
 vector<int> dijkstra(int V, vector<vector<pair<int,int>>>& adj, int src){
     vector<int> dist(V, INT_MAX);
     priority_queue<pair<int,int>, vector<pair<int,int>>, greater<pair<int,int>>> pq;
@@ -199,7 +199,7 @@ If any edge can still be relaxed on Vth iteration → negative cycle exists.
 
 ### Code
 
-```cpp
+```py
 bool bellmanFord(int V, vector<tuple<int,int,int>>& edges, int src, vector<int>& dist){
     dist.assign(V, INT_MAX);
     dist[src]=0;
@@ -283,10 +283,10 @@ Takeaway: understood traversal patterns + relaxation concept for weighted graphs
 
 ✅ **Deliverables after Block 6**
 
-* `graphs/bfs_dfs.cpp`
-* `graphs/topo.cpp`
-* `graphs/dijkstra.cpp`
-* `graphs/bellman_ford.cpp`
+* `graphs/bfs_dfs.py`
+* `graphs/topo.py`
+* `graphs/dijkstra.py`
+* `graphs/bellman_ford.py`
 * Updated `cheatsheet.md` and `progress.md`
 
 ---

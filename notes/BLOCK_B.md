@@ -51,7 +51,7 @@ Sorting is a **primitive for optimization** — once data is ordered, searching,
 
 **Code**
 
-```cpp
+```py
 void merge(vector<int>& a,int l,int m,int r){
   vector<int> L(a.begin()+l,a.begin()+m+1),
               R(a.begin()+m+1,a.begin()+r+1);
@@ -88,7 +88,7 @@ void mergeSort(vector<int>& a,int l,int r){
 
 ### Code
 
-```cpp
+```py
 int partition(vector<int>& a,int low,int high){
   int pivot=a[high],i=low-1;
   for(int j=low;j<high;j++)
@@ -119,7 +119,7 @@ void quickSort(vector<int>& a,int low,int high){
 1. Build max-heap O(n)
 2. Repeatedly extract max & heapify O(log n)
 
-```cpp
+```py
 void heapify(vector<int>& a,int n,int i){
   int largest=i,l=2*i+1,r=2*i+2;
   if(l<n && a[l]>a[largest]) largest=l;
@@ -145,7 +145,7 @@ Used when keys are integers in small range [0, k].
 
 **Counting Sort**
 
-```cpp
+```py
 void countingSort(vector<int>& a,int k){
   vector<int> cnt(k+1),out(a.size());
   for(int x:a) cnt[x]++;
@@ -168,7 +168,7 @@ void countingSort(vector<int>& a,int k){
 
 Find k-th smallest element using Quick Sort’s partition logic.
 
-```cpp
+```py
 int quickSelect(vector<int>& a,int l,int r,int k){
   if(l==r) return a[l];
   int pi=partition(a,l,r);
